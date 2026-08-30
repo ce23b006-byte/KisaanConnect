@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kisaan Connect</title><link rel="stylesheet" href="/static/style.css"></head><body>
+<nav><a class="brand" href="/">🌱 Kisaan<span>Connect</span></a><span>Discover agricultural support, simply.</span></nav>
+<header><div><p class="eyebrow">SMART FARMER PORTAL</p><h1>Find the right scheme<br>for your farm.</h1><p class="subtitle">Search and filter agricultural schemes by state, crop and category.</p></div></header>
+<main><section class="search-panel">
+<input id="q" placeholder="Search PM-KISAN, insurance, credit..." oninput="loadSchemes()">
+<select id="state" onchange="loadSchemes()"><option value="">All States</option>{% for x in states %}<option>{{x}}</option>{% endfor %}</select>
+<select id="crop" onchange="loadSchemes()"><option value="">All Crops</option>{% for x in crops %}<option>{{x}}</option>{% endfor %}</select>
+<select id="category" onchange="loadSchemes()"><option value="">All Categories</option><option>Income Support</option><option>Insurance</option><option>Credit</option><option>Investment Support</option></select>
+</section><div class="meta"><b id="count">0</b> schemes found</div><section id="cards" class="cards"></section></main>
+<script>
+async function loadSchemes(){
+ const p=new URLSearchParams({q:q.value,state:state.value,crop:crop.value,category:category.value});
+ const data=await fetch('/api/schemes?'+p).then(r=>r.json()); count.textContent=data.count;
+ cards.innerHTML=data.schemes.map(s=>`<article class="card"><span class="pill">${s.category}</span><h2>${s.name}</h2><p>${s.description}</p><div class="benefit">✓ ${s.benefit}</div><div class="tags">${s.tags.map(t=>`<span>#${t}</span>`).join('')}</div><a href="/scheme/${s.id}">View eligibility <b>→</b></a></article>`).join('') || '<div class="empty">No schemes match your filters.</div>';
+} loadSchemes();
+</script></body></html>

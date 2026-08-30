@@ -1,0 +1,7 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/static/style.css"><title>{{scheme.name}}</title></head>
+<body><nav><a class="brand" href="/">🌱 Kisaan<span>Connect</span></a></nav><main class="detail">
+<a class="back" href="/">← All schemes</a><span class="pill">{{scheme.category}}</span><h1>{{scheme.name}}</h1><p class="subtitle">{{scheme.description}}</p>
+<div class="benefit big">✓ {{scheme.benefit}}</div><div class="detail-grid">
+<section><h3>Eligibility</h3><ul>{% for x in scheme.eligibility %}<li>{{x}}</li>{% endfor %}</ul></section>
+<section><h3>Required documents</h3><ul>{% for x in scheme.documents %}<li>{{x}}</li>{% endfor %}</ul></section>
+</div><p class="note">⚠️ Verify current eligibility and application details from official government portals before applying.</p></main></body></html>

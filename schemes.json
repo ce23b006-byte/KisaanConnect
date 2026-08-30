@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "name": "PM-KISAN",
+    "state": "All India",
+    "crops": [
+      "All Crops"
+    ],
+    "category": "Income Support",
+    "benefit": "\u20b96,000 annual income support",
+    "description": "Direct income support scheme for eligible farmer families.",
+    "eligibility": [
+      "Eligible landholding farmer families",
+      "Subject to scheme guidelines"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Bank account details",
+      "Land records"
+    ],
+    "tags": [
+      "income",
+      "support",
+      "farmer",
+      "central"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "state": "All India",
+    "crops": [
+      "Rice",
+      "Wheat",
+      "Cotton"
+    ],
+    "category": "Insurance",
+    "benefit": "Financial protection against crop loss",
+    "description": "Crop insurance designed to reduce financial risk from natural events and crop losses.",
+    "eligibility": [
+      "Eligible notified crop growers",
+      "Applicable in notified areas"
+    ],
+    "documents": [
+      "Identity proof",
+      "Land/crop details",
+      "Bank details"
+    ],
+    "tags": [
+      "insurance",
+      "crop",
+      "risk",
+      "weather"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Kisan Credit Card",
+    "state": "All India",
+    "crops": [
+      "All Crops"
+    ],
+    "category": "Credit",
+    "benefit": "Access to short-term agricultural credit",
+    "description": "Institutional credit facility supporting cultivation and allied agricultural activities.",
+    "eligibility": [
+      "Eligible farmers and agricultural producers"
+    ],
+    "documents": [
+      "Identity proof",
+      "Land records",
+      "Bank documents"
+    ],
+    "tags": [
+      "loan",
+      "credit",
+      "banking"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Rythu Bandhu",
+    "state": "Telangana",
+    "crops": [
+      "All Crops"
+    ],
+    "category": "Investment Support",
+    "benefit": "Agricultural investment assistance",
+    "description": "State agricultural investment support programme for eligible farmers.",
+    "eligibility": [
+      "As per Telangana government guidelines"
+    ],
+    "documents": [
+      "Land records",
+      "Identity proof"
+    ],
+    "tags": [
+      "telangana",
+      "investment",
+      "support"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "YSR Rythu Bharosa",
+    "state": "Andhra Pradesh",
+    "crops": [
+      "All Crops"
+    ],
+    "category": "Income Support",
+    "benefit": "Financial assistance for eligible farming households",
+    "description": "Farmer welfare programme providing financial support subject to applicable rules.",
+    "eligibility": [
+      "As per Andhra Pradesh government guidelines"
+    ],
+    "documents": [
+      "Identity proof",
+      "Land records",
+      "Bank details"
+    ],
+    "tags": [
+      "andhra pradesh",
+      "welfare",
+      "support"
+    ]
+  }
+]
